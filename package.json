@@ -1,7 +1,7 @@
 {
   "name": "servidorEmailNode",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "text.html",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -9,6 +9,6 @@
     "nodemailer": "^6.6.5"
   },
   "scripts": {
-    "start": "index.js"
+    "start": "text.html"
   }
 }

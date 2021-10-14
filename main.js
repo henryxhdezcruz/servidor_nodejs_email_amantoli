@@ -34,13 +34,12 @@ app.post("/send-email", function (req, res) {
             res.status(500).send(error.message);
         } else {
             console.log("mensaje enviado con éxito");
-            //console.log(html);
             console.log(req.body);
             res.status(200).jsonp(req.body)
         }
     })
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Servidor en -> http://localhost:3000");
 });
